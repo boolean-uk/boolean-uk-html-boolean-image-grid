@@ -1,0 +1,127 @@
+:root {
+  --main-clr: #2b8a3e;
+  --hdr-clr: #111827;
+  --twtr-logo-clr: #00acee;
+  --brd-wht-clr: #fff;
+  --crd-brdr-clr: #000;
+}
+
+body {
+  font-size: 62px;
+  font-family: "Lato", sans-serif;
+}
+
+header,
+footer {
+  background-color: var(--hdr-clr);
+}
+footer {
+  margin-bottom: 0;
+  margin-top: 80px;
+}
+a:link {
+  text-decoration: none;
+  color: var(--crd-brdr-clr);
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  color: var(--main-clr);
+  font-weight: bold;
+}
+h2 {
+  margin-left: 40px;
+}
+.hero-pic {
+  width: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  margin-bottom: 150px;
+}
+.grid-layout {
+  margin: auto;
+  width: 80%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+  grid-auto-rows: auto;
+  gap: 40px;
+}
+.card {
+  border: 1px solid;
+  border-radius: 4%;
+}
+.card-detail {
+  border: 1px solid;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.img-lapt {
+  max-width: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+.icons {
+  margin-top: 40px;
+  width: 100px;
+  height: 100px;
+}
+.twitter-logo {
+  color: var(--brd-wht-clr);
+  background-color: var(--twtr-logo-clr);
+  border-radius: 50%;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+}
+.icon-pos {
+  text-align: right;
+  margin-right: 40px;
+}
+p {
+  margin: 40px;
+  line-height: 1.5;
+}
+.logo-crd {
+  position: relative;
+  text-align: center;
+}
+
+.min-logo {
+  width: 150px;
+  height: 150px;
+  border: 1px solid var(--hdr-clr);
+  border-radius: 50%;
+  position: absolute;
+  top: -9005px;
+  right: 40%;
+}
+@media screen and (min-width: 600px) {
+  .grid-layout {
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+    gap: 40px;
+  }
+  .logo-crd {
+    position: relative;
+    text-align: center;
+  }
+  .min-logo {
+    width: 150px;
+    height: 150px;
+    border: 1px solid var(--hdr-clr);
+    border-radius: 50%;
+    position: absolute;
+    top: -805px;
+    right: 40px;
+  }
+}
